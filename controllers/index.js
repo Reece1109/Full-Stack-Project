@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 const route = express.Router();
-const {User, Product} = require('../models');
+const {User, Product} = require('../models/index.js');
 const user = new User();
 const product = new Product();
 

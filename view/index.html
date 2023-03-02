@@ -1,12 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sushi Store API</title>
+    <style>
+        /* Styles for the table */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Styles for the page header */
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hello</h1>
+    <h1>Sushi Store API</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>HTTP Method</th>
+                <th>Endpoint</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>GET</td>
+                <td>/ or /Sushi_Store2</td>
+                <td>Returns the HTML5 file for the home page</td>
+            </tr>
+            <tr>
+                <td>POST</td>
+                <td>/login</td>
+                <td>Logs in a user</td>
+            </tr>
+            <tr>
+                <td>GET</td>
+                <td>/users</td>
+                <td>Retrieves a list of all users</td>
+            </tr>
+            <tr>
+                <td>PUT</td>
+                <td>/user/:id</td>
+                <td>Updates a user with the specified ID</td>
+            </tr>
+            <tr>
+                <td>POST</td>
+                <td>/register</td>
+                <td>Creates a new user</td>
+            </tr>
+            <tr>
+                <td>DELETE</td>
+                <td>/user/:id</td>
+                <td>Deletes a user with the specified ID</td>
+            </tr>
+            <tr>
+                <td>GET</td>
+                <td>/products</td>
+                <td>Retrieves a list of all products</td>
+            </tr>
+            <tr>
+                <td>GET</td>
+                <td>/product/:id</td>
+                <td>Retrieves a single product with the specified ID</td>
+            </tr>
+            <tr>
+                <td>POST</td>
+                <td>/product</td>
+                <td>Adds a new product</td>
+            </tr>
+            <tr>
+                <td>PUT</td>
+                <td>/product/:id</td>
+                <td>Updates a product with the specified ID</td>
+            </tr>
+            <tr>
+                <td>DELETE</td>
+                <td>/product/:id</td>
+                <td>Deletes a product with the specified ID</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
+
 </html>
